@@ -6,10 +6,16 @@ window.isProductionEnvironment = !window.location.host.startsWith('localhost');
 window.iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
 // set display name
+// Events.on('display-name', e => {
+//     const me = e.detail.message;
+//     const $displayName = $('displayName')
+//     $displayName.textContent = 'You are known as ' + me.displayName;
+//     $displayName.title = me.deviceName;
+// });
 Events.on('display-name', e => {
     const me = e.detail.message;
     const $displayName = $('displayName')
-    $displayName.textContent = 'You are known as ' + me.displayName;
+    $displayName.textContent = '你是 ' + me.displayName;
     $displayName.title = me.deviceName;
 });
 
