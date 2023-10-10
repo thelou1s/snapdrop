@@ -37,6 +37,8 @@
 </head>
 
 <body translate="no">
+    
+    <!--
     <header class="row-reverse">
         <a href="#about" class="icon-button" title="About Snapdrop">
             <svg class="icon">
@@ -58,14 +60,17 @@
                 <use xlink:href="#homescreen" />
             </svg>
         </a>
-    </header>
+    </header> 
+    -->
+    
     <!-- Peers -->
     <x-peers class="center"></x-peers>
     <x-no-peers>
-        <h2>Open Snapdrop on other devices to send files</h2>
+        <!-- <h2>Open Snapdrop on other devices to send files</h2> -->
+        <h2>连接相同Wifi后传输文件</h2>
     </x-no-peers>
     <!-- <x-instructions desktop="Click to send files or right click to send a message" mobile="Tap to send files or long tap to send a message"></x-instructions> -->
-    <x-instructions desktop="点击以发送文件，或右击以发送消息" mobile="点击以发送文件，或长按以发送消息"></x-instructions>
+    <x-instructions desktop="点击发送文件，或右击发送消息" mobile="点击发送文件，或长按发送消息"></x-instructions>
     <!-- Footer -->
     <footer class="column">
         <svg class="icon logo">
@@ -73,6 +78,7 @@
         </svg>
         <div id="displayName" placeholder="The easiest way to transfer data across devices"></div>
         <!-- <div class="font-body2">You can be discovered by everyone on this network</div> -->
+        <div class="font-body2"> </div>
     </footer>
     <!-- Receive Dialog -->
     <x-dialog id="receiveDialog">
